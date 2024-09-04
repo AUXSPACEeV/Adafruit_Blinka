@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2022 Corebb
+# SPDX-FileCopyrightText: 2024 joldjunge
 #
 # SPDX-License-Identifier: MIT
 """Pin definitions for the Orange Pi 5 Pro"""
