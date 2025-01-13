@@ -9,7 +9,9 @@ from adafruit_blinka.agnostic import board_id, chip_id
 # We intentionally are patching into this namespace so skip the wildcard check.
 # pylint: disable=unused-wildcard-import,wildcard-import,ungrouped-imports
 
-if chip_id == ap_chip.ESP8266:
+if True:
+    from adafruit_blinka.microcontroller.rockchip.rk3588s.pin import *
+elif chip_id == ap_chip.ESP8266:
     from adafruit_blinka.microcontroller.esp8266.pin import *
 elif chip_id == ap_chip.STM32F405:
     from adafruit_blinka.microcontroller.stm32.stm32f405.pin import *
