@@ -23,10 +23,7 @@ from adafruit_blinka.agnostic import board_id, detector
 # pylint: disable=wildcard-import,unused-wildcard-import,ungrouped-imports
 # pylint: disable=import-outside-toplevel
 
-if True:
-    from adafruit_blinka.board.orangepi.orangepi5pro import *
-
-elif board_id == ap_board.FEATHER_HUZZAH:
+if board_id == ap_board.FEATHER_HUZZAH:
     from adafruit_blinka.board.feather_huzzah import *
 
 elif board_id == ap_board.VISIONFIVE2:
