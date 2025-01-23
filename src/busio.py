@@ -9,6 +9,8 @@ See `CircuitPython:busio` in CircuitPython for more details.
 
 * Author(s): cefn
 """
+import traceback
+
 try:
     import threading
 except ImportError:
@@ -165,7 +167,7 @@ class I2C(Lockable):
                     break
                 # pylint: enable=unexpected-keyword-arg
             except RuntimeError:
-                pass
+                traceback.print_exc()
         else:
             raise ValueError(
                 "No Hardware I2C on (scl,sda)={}\nValid I2C ports: {}".format(
